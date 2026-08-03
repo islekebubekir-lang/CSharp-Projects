@@ -77,7 +77,7 @@ else
     System.Console.WriteLine("Gecis Ücreti Ödeyiniz."); 
 
  } */
-int hiz = Convert.ToInt32(Console.ReadLine()!);
+/* int hiz = Convert.ToInt32(Console.ReadLine()!);
 if (hiz >= 0 && hiz <= 90)
 
 {
@@ -91,3 +91,73 @@ else if (hiz < 0)
 {
     System.Console.WriteLine("Gecersiz Hiz Limiti.");
 }
+System.Console.WriteLine("Toplam tutar giriniz. "); */
+/* double toplamTutar = Convert.ToDouble(Console.ReadLine()!);
+if (toplamTutar <= 0)
+{
+    System.Console.WriteLine("Gecersiz tutar girdiniz.");
+
+}
+else if (toplamTutar > 0)
+{
+    System.Console.WriteLine("Vip kartiniz varmi? evet/hayir");
+    string vipKart = Console.ReadLine()!;
+    if (vipKart == "evet")
+    {
+        if (toplamTutar >= 500)
+        {
+            toplamTutar = toplamTutar * 0.80;
+        }
+        else
+        {
+            toplamTutar = toplamTutar * 0.90;
+        }
+    }
+    else
+    {
+        if (toplamTutar >= 500)
+        {
+            toplamTutar = toplamTutar * 0.95;
+        }
+    }
+    System.Console.WriteLine($"Ödemeniz gereken net tutar:{toplamTutar}TL");
+
+
+} */
+System.Console.WriteLine("Lütfen Yaşinizi giriniz?");
+int yas =Convert.ToInt32 (Console.ReadLine()!);
+if (yas<=0)
+{
+    System.Console.WriteLine("Gecersiz Yas Girdiniz.");
+
+}else if(yas>0)
+{
+    System.Console.WriteLine("Korku mu Animasyon mu?");
+    string filmTuru = Console.ReadLine()!;
+
+
+
+
+
+
+if (filmTuru == "korku" && yas < 18)
+{
+    System.Console.WriteLine("Bu filme yasiniz yetmiyor, giris yapamazsiniz!");
+}
+else
+{
+    double biletFiyati = 200;
+
+    if (yas < 12)
+    {
+        biletFiyati = biletFiyati * 0.50;
+    }
+    else if (yas >= 65)
+    {
+        biletFiyati = biletFiyati * 0.70;
+    }
+else
+{
+    System.Console.WriteLine($"Iyi seyirler! Bilet ucretiniz: {biletFiyati} TL");
+}
+}}
