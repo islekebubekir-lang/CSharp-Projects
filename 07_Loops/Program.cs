@@ -12,10 +12,11 @@ while (hatMesgulMu)
     hatMesgulMu=false;
 } */
 
- bool adminMi=true;
+bool adminMi = true;
 while (adminMi)
 {
     System.Console.WriteLine("Hosgeldiniz. ");
     adminMi = false;
 }
+
 
