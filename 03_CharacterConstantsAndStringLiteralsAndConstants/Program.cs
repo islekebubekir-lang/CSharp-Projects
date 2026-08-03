@@ -28,3 +28,4 @@ System.Console.WriteLine(arabaMarkasi[arabaMarkasi.Length - 1]);
 
 
 
+
